@@ -1,0 +1,18 @@
+//
+// resume.scss
+//
+.resume-desc {
+    .content {
+        .company-university {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .resume-desc {
+        .resume-year {
+            float: none !important;
+        }
+    }
+}

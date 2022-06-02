@@ -1,0 +1,11 @@
+//
+// blog.scss
+//
+.blog {
+    .title, .read-more {
+        transition: all 0.5s ease;
+        &:hover {
+            color: $custom !important;
+        }
+    }
+}

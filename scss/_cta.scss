@@ -1,0 +1,22 @@
+//
+// cta.scss
+//
+.bg-cta {
+    padding: 150px 0;
+    .play-btn {
+        height: 80px;
+        width: 80px;
+        font-size: 30px;
+        line-height: 78px;
+        border-radius: 50%;
+        display: inline-block;
+        -webkit-text-stroke: 1.5px $custom;
+        -webkit-text-fill-color: transparent;  
+        border: 2px solid $white;
+        margin-top: 30px;
+        &:hover {
+            -webkit-text-stroke: 0px $custom;
+            -webkit-text-fill-color: $custom;
+        }
+    }
+}

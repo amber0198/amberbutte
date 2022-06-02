@@ -1,0 +1,70 @@
+//
+// work.scss
+//
+.container-filter {
+    li {
+        display: inline-block;
+        a {
+            font-size: 11px;
+            padding: 0px 15px;
+            margin: 5px 3px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+            line-height: 34px;
+            transition: all 0.5s ease;
+            &.active,
+            &:hover {
+                color: $custom !important;
+                border-color: $custom !important;
+            }
+        }
+    }
+}
+
+.item-box {
+    .item-container {
+        transform: translateY(0%);
+        transition: all 0.5s ease;
+    }
+    .item-mask {
+        position: absolute;
+        transition: all 0.5s ease;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: none repeat scroll 0 0 lighten($custom, 10%);
+        transform: translateY(100%);
+        .tag {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            color: $white;
+        }
+        .item-caption {
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%);
+            left: 0px;
+            right: 0px;
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+    }
+    &:hover {
+        .item-mask {
+            transform: translateY(0%);
+            .item-caption {
+                opacity: 1;
+            }
+        }
+        .item-container {
+            transform: translateY(-100%);
+            transition: all 0.5s ease;
+        }
+    }
+}
+.spacing{
+    padding-left: 3px;
+    padding-right: 3px;
+}
